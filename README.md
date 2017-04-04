@@ -1,7 +1,6 @@
 # Library-iPhone
-Automatiser compilation libimobiledevice
+Automated compilation of libimobiledevice
 
-
-
- ./autobuild.sh
+To build and install libimobiledevice tools, run:
+./autobuild.sh
 

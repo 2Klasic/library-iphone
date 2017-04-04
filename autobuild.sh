@@ -53,11 +53,13 @@ function brew_install(){
         brew upgrade
 
 	 # Install Development Packages;
-        brew install libxml2
-        brew install libzip
-        brew install libplist
-        brew install openssl
-        brew install usbmuxd
+        #brew install libxml2
+        #brew install libusb
+        #brew install libplist
+        #brew install openssl
+        #brew install usbmuxd
+        #brew install libtasn1
+        brew install libimobiledevice
 
 
         # Install Software;
@@ -68,8 +70,10 @@ function brew_install(){
         brew install libtool
         brew install pkg-config
         brew install gcc
-        brew install libusb
+        brew install libzip
         brew install glib
+        brew install readline
+        brew install curl
 
         # Install Optional;
         brew install Caskroom/cask/osxfuse
@@ -82,6 +86,11 @@ function brew_install(){
 
         # Remove outdated versions from the cellar.
         brew cleanup
+
+        # Link OpenSSL from Brew
+        ln -s /usr/local/opt/openssl/lib/* /usr/local/lib
+        ln -s /usr/local/opt/openssl/include/openssl /usr/local/include
+        ln -s /usr/local/opt/openssl/bin/openssl /usr/local/bin/openssl
          
 }
 
