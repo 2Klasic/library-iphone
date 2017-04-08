@@ -72,8 +72,7 @@ function brew_install(){
         brew install gcc
         brew install libzip
         brew install glib
-        brew install readline
-        brew install curl
+        #brew install curl
 
         # Install Optional;
         brew install Caskroom/cask/osxfuse
@@ -90,7 +89,7 @@ function brew_install(){
         # Link OpenSSL from Brew
         ln -s /usr/local/opt/openssl/lib/* /usr/local/lib
         ln -s /usr/local/opt/openssl/include/openssl /usr/local/include
-        ln -s /usr/local/opt/openssl/bin/openssl /usr/local/bin/openssl
+        #ln -s /usr/local/opt/openssl/bin/openssl /usr/local/bin/openssl
          
 }
 
