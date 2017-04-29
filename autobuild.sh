@@ -52,7 +52,7 @@ function brew_install(){
         # Upgrade any already-installed formulae.
         brew upgrade
 
-	 # Install Development Packages;
+	    # Install Development Packages;
         #brew install libxml2
         #brew install libusb
         #brew install libplist
@@ -88,8 +88,9 @@ function brew_install(){
 
         # Link OpenSSL from Brew
         ln -s /usr/local/opt/openssl/lib/* /usr/local/lib
+        ln -s /usr/local/opt/openssl/lib/pkgconfig/* /usr/local/lib/pkgconfig
         ln -s /usr/local/opt/openssl/include/openssl /usr/local/include
-        #ln -s /usr/local/opt/openssl/bin/openssl /usr/local/bin/openssl
+        ln -s /usr/local/opt/openssl/bin/openssl /usr/local/bin/openssl
          
 }
 
